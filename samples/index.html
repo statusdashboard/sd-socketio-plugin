@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io.connect('http://localhost:3303');
+      socket.on('sd_refresh', function (data) {
+        $("#refresh ul").prepend('<li>On ' + new Date() + ' :<br><pre>' + JSON.stringify(data) + '</pre></li>');
+        console.log(data);
+      });
+    </script>
+  </head>
+<body>
+<h2>Status Dashboard Socket.IO Plugin Sample</h2>
+
+<div id="refresh">
+  <ul class="messages"></ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "sd-socketio-plugin-sample",
+  "version": "0.0.0",
+  "description": "Socket.IO plugin for status dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/chamerling/sd-socketio-plugin.git"
+  },
+  "keywords": [
+    "statusdashboard",
+    "monitoring",
+    "node",
+    "socket.io"
+  ],
+  "author": "Christophe Hamerling <christophe.hamerling@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chamerling/sd-socketio-plugin/issues"
+  },
+  "dependencies": {
+    "socket.io-client" : "latest",
+    "socket.io" : "latest"
+  }
+}
