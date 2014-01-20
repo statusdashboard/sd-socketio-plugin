@@ -8,7 +8,7 @@ Send status dashboard updates to a Socket.IO compliant server.
 
 ### Install
 
-Install the plugin in status dashboard as defined at https://github.com/obazoud/statusdashboard#external-plugins
+Install the 'sd-socketio-plugin' plugin in status dashboard as defined at https://github.com/obazoud/statusdashboard#external-plugins
 
 ### Configure
 
