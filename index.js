@@ -36,8 +36,11 @@ module.exports = function(statusdb) {
   });
 
   // this is where we send stuff to the socket.IO server
-  // TODO : More events
   api.on('refresh', function(status) {
     socket.emit('refresh', status);
+  });
+
+  api.on('status', function(status) {
+    socket.emit('status', status);
   });
 }

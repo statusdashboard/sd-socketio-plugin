@@ -20,3 +20,8 @@ setInterval(function() {
   console.log('Generating new data');
   api.emit('refresh', { foo : 'bar'});
 }, 1000);
+
+setInterval(function() {
+  console.log('Generating Status');
+  api.emit('status', { status : '...'});
+}, 2000);

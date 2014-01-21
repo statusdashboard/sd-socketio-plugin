@@ -5,9 +5,14 @@
     <script>
       var socket = io.connect('http://localhost:3303');
       socket.on('sd_refresh', function (data) {
-        $("#refresh ul").prepend('<li>On ' + new Date() + ' :<br><pre>' + JSON.stringify(data) + '</pre></li>');
+        $("#refresh ul").prepend('<li>On ' + new Date() + ' :<br>Refresh : <pre>' + JSON.stringify(data) + '</pre></li>');
         console.log(data);
       });
+      socket.on('sd_status', function (data) {
+        $("#refresh ul").prepend('<li>On ' + new Date() + ' :<br>Status : <pre>' + JSON.stringify(data) + '</pre></li>');
+        console.log(data);
+      });
+
     </script>
   </head>
 <body>

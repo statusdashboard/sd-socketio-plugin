@@ -15,6 +15,13 @@ io.sockets.on('connection', function (socket) {
     socket.emit('sd_refresh', data)
     socket.broadcast.emit('sd_refresh', data);
   });
+
+  socket.on('status', function (data) {
+    console.log('status received ', data);
+    console.log('Sending to clients...')
+    socket.emit('sd_status', data)
+    socket.broadcast.emit('sd_status', data);
+  });
 });
 
 function handler (req, res) {

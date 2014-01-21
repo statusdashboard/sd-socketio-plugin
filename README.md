@@ -2,7 +2,7 @@
 
 Send status dashboard updates to a Socket.IO compliant server.
 
-    Status Dashboard --> Socket.IO plugin --> Socket.IO server
+    Status Dashboard --> Socket.IO plugin --> Socket.IO server --> Socket.IO client(s)
 
 ## Howto
 
