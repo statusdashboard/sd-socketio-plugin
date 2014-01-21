@@ -8,7 +8,11 @@ Send status dashboard updates to a Socket.IO compliant server.
 
 ### Install
 
-Install the 'sd-socketio-plugin' plugin in status dashboard as defined at https://github.com/obazoud/statusdashboard#external-plugins
+Install the 'sd-socketio-plugin' plugin in status dashboard as defined at https://github.com/obazoud/statusdashboard#external-plugins:
+
+- Download/clone/install statusdashboard
+- Install the plugin 'npm install sd-socketio-plugin'
+- Add the plugin to the configuration file (plugins.json)
 
 ### Configure
 
@@ -20,7 +24,7 @@ Add the socket.io information to the status dashboad settings:
           url : 'http://localhost:3000'
     }
 
-Where the URL is a Socket.IO compliant server.
+Where the URL is a Socket.IO compliant server. If not set, it will default to 'http://localhost:3303'.
 
 ## Sample
 

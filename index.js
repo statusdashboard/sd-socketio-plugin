@@ -12,7 +12,10 @@ module.exports = function(statusdb) {
   var api = statusdb.api;
   var settings = statusdb.settings;
 
-  var url = settings.plugins.socketio.url || 'http://localhost:3303';
+  var url = 'http://localhost:3303';
+  if (settings.plugins.socketio) {
+    url = settings.plugins.socketio.url || url;
+  }
   var socket = io.connect(url);
 
   socket.on('connect', function() {
