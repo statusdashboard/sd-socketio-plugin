@@ -1,6 +1,6 @@
 {
   "name": "sd-socketio-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Socket.IO plugin for status dashboard",
   "main": "index.js",
   "scripts": {
